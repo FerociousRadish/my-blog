@@ -1,14 +1,61 @@
 <!doctype html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus®">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <title>my-blog-index</title>
- </head>
- <body>
-  test
- </body>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <a href="/" class="site-title" onclick="showHome(); return false;">My Blog</a>
+        <p class="site-desc">技术 / 学习 / 思考</p>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p>欢迎来到我的个人博客。这里记录我的学习笔记、项目思考和技术探索。</p>
+      </div>
+    </section>
+
+    <!-- Posts -->
+    <section class="posts">
+      <div class="container">
+        <h2 class="section-title">文章</h2>
+        <ul id="post-list" class="post-list">
+          <!-- JS 渲染 -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section id="content" class="content"></section>
+
+    <!-- Future Sections -->
+    <section class="future">
+      <div class="container">
+        <h2 class="section-title">更多</h2>
+        <div class="future-links">
+          <a href="#" class="future-link">Projects →</a>
+          <a href="#" class="future-link">Timeline →</a>
+          <a href="#" class="future-link">About →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 My Blog · Built with OpenCode</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="posts-list.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
